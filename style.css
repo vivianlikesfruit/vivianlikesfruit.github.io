@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --card-border-style: 2px #d1d1d1 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  height: 15rem;
+  font-size: 24px;
+  background-color: #ffcc40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  font-family: 'Fredoka One', cursive;
+  font-size: 48px;
+  color: #4a4a4a;
+  margin: 2.5rem;
+}
+
+#subtitle {
+  
+}
+
+.info-card {
+  max-width: 40rem;
+}
+.info-card .title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 24px;
+  background-color: pink;
+  border-radius: 14px 14px 0px 0px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.info-card .content {
+  border-left: var(--card-border-style);
+  border-bottom: var(--card-border-style);
+  border-right: var(--card-border-style);
+  border-radius: 0px 0px 14px 14px;
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#footer {
+  height: 5rem;
+  background-color: #ffcc40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 25rem;
+  object-fit: cover;
+  object-position: 100% 0%;
+  border-radius: 14px;
+}
+
+#header {
+    background: linear-gradient(270deg, #eed617, #eea717, #f393b4);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
